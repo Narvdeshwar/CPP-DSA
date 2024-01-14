@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    int x;
     map<string, int> m;
     int n;
     cin >> n;
@@ -12,9 +13,9 @@ int main()
         m[s]++;
         n--;
     }
-    cout<<"counting of string"<<endl;
+    cout << "counting of string" << endl;
     for (auto s : m)
     {
-        cout << s.first << " " << s.second<<endl;
+        cout << s.first << " " << s.second << endl;
     }
 }
