@@ -4,6 +4,7 @@ int main()
 {
     int x;
     map<string, int> m;
+    
     int n;
     cin >> n;
     while (n > 0)
