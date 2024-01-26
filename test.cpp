@@ -22,7 +22,7 @@ public:
 int main()
 {
     Solution sol;
-    vector<int> v = {1, 2, 3, 1, 1, 3};
+    vector<int> v = {1, 1, 1, 3};
     cout << sol.numIdenticalPairs(v);
     return 0;
 }
