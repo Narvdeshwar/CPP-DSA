@@ -1,28 +1,13 @@
-#include <bits/stdc++.h>
-using namespace std;
-class Solution
-{
-public:
-    int numIdenticalPairs(vector<int> &nums)
-    {
+#include <iostream>
+#include <boost/multiprecision/cpp_int.hpp>
 
-        set<int> s(nums.begin(), nums.end());
-        int ecount = 0;
-        for (int i : s)
-        {
-            cout << i << ' ';
-            int a = count(nums.begin(), nums.end(), i);
-            ecount = ecount + (a * (a - 1) / 2);
-        }
+int main() {
+    using namespace boost::multiprecision;
+    
+    cpp_int n = 2e32; // Using Boost Multiprecision cpp_int for arbitrary-precision arithmetic
+    int a = 10e5; // 10 * 10^5
 
-        return ecount;
-    }
-};
+    std::cout << a % n << std::endl;
 
-int main()
-{
-    Solution sol;
-    vector<int> v = {1, 1, 1, 3};
-    cout << sol.numIdenticalPairs(v);
     return 0;
 }
